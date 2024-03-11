@@ -1,0 +1,190 @@
+The LET keyword was introduced in ES6(2015)
+
+variable declared with LET have  Block scope
+
+variable declared with LET must be declared before use
+
+variable declared with LET cannot be Redeclared in the same scope.
+
+
+Block scope:
+~~~~~~~~~~~~
+
+Before ES6(2015),Javascript did not have Block scope.
+
+Javascript had Global scope and function scope.
+
+ES6 introduced the two new Javascript keyword: LET and CONST.
+
+These two keywords provided  Block scope in Javascript :
+
+Example:
+~~~~~~
+//variable declared inside a { } block cannot be accessed form outside the block:
+
+{
+    let x = 2;
+}
+// x can not be used here
+
+
+Global scope:
+~~~~~~~~~~~~~
+variable declared with the VAR always have Global scope.
+
+variable declared with the VAR keyword can NOT have block scope:
+
+Example:
+~~~~~~~~
+//variable declared with VAR inside a { } block can be accessed form outside the block :
+
+{
+    let x = 2; 
+}
+// x can be used here
+
+
+Cannot be Redeclared :
+~~~~~~~~~~~~~~~~~~~~
+variable defined with LET Cannot br Redeclared.
+
+you can not accidentally Redeclare a variable declared with LET.
+
+
+//with LET you cannot do this:
+
+let x = "Sirisha";
+
+let x = 0;
+
+
+//variable defined with VAR can be Redeclared.
+
+var x = "Sirisha";
+
+var x = 0;
+
+
+Redeclaring variable:
+~~~~~~~~~~~~~~~~~~~~~
+Redeclaring a variable using the VAR keyword can impose problems.
+
+Redeclaring a variable inside a block will also Redeclare the variable outside the block:
+
+Example:
+~~~~~~~~
+var X = 10;
+// here x is 10
+{
+var X = 2;
+//here x is 2
+}
+
+//here x is 2
+
+
+Redeclaring a variable using the LET keyword can solve this problem.
+
+Redeclaring a variable inside a block will not declare the variable outside the block:
+
+Example:
+~~~~~~~~~
+
+let X = 10;
+//here x is 10
+
+{
+    let x = 2;
+    //here x is 2
+}
+// here x is 10
+
+
+Difference between var,let,const?
+
+         scope   Redeclare  Reassign  Hosited  Binds this
+
+var      no       yes         yes         yes      yes
+
+let      yes      no          yes          no        no
+
+const    yes      no          no          no         no
+
+
+
+
+what is Good?
+~~~~~~~~~~~~~
+let and const have block scope.
+
+let and const cannot be Redeclared.
+
+let and const must be declared before use.
+
+let and const does not bind to this.
+
+let and const are not hosited.
+
+
+what is not good?
+~~~~~~~~~~~~~~~~
+var does not have to be declared.
+
+var is hosited.
+
+var bind to this.
+
+
+Redeclaring:
+~~~~~~~~~~~
+
+Redeclaring a Javascript variable with VAR is allowed anywhere in a program:
+
+
+Example:
+~~~~~~~~
+var x = 2;
+//now x is 2
+
+var x = 3;
+//now x is 3
+
+
+with LET, Redeclaring a variable in the same  block is NOT allowed:
+let x = 2;   // Allowed
+
+{
+let x = 3;   // Allowed
+}
+
+{
+let x = 4;    // Allowed
+}
+
+
+
+Let Hoistingvar:
+~~~~~~~~~~~~~~~
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+
+carName = "Volvo";
+var carName;
+
+Let Hosinglet:
+~~~~~~~~~~~~~~
+Variables defined with let are also hoisted to the top of the block, but not initialized.
+
+Meaning: Using a let variable before it is declared will result in a ReferenceError:
+
+
+carName  = "volvo"
+let carName;
+
+
+
+constant Object:
+~~~~~~~~~~~~~~~~
+you can change the properties of a constant object:
+

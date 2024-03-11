@@ -1,0 +1,98 @@
+JavaScript String Padding:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ECMAScript 2017 added two new string methods to JavaScript: padStart() and padEnd() to support padding at the beginning and at the end of a string.
+
+JavaScript String padStart():
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The padStart() method pads a string from the start.
+
+It pads a string with another string (multiple times) until it reaches a given length.
+
+Note:
+~~~~~
+The padStart() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+JavaScript String padEnd():
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The padEnd() method pads a string from the end.
+
+It pads a string with another string (multiple times) until it reaches a given length.
+
+Note:
+~~~~~
+The padEnd() method is a string method.
+
+To pad a number, convert the number to a string first.
+
+
+JavaScript String repeat():
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The repeat() method returns a string with a number of copies of a string.
+
+The repeat() method returns a new string.
+
+The repeat() method does not change the original string.
+
+
+Syntax:
+~~~~~~~
+string.repeat(count)
+
+Parameters:
+~~~~~~~~~~~
+Parameter	Description
+count	Required.
+The number of copies wanted.
+
+Return Value:
+~~~~~~~~~~~~
+Type	Description
+String	A new string containing the copies.
+
+repeat() is not supported in Internet Explorer.
+
+Replacing String Content:
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The replace() method replaces a specified value with another value in a string:
+
+Note:
+~~~~~
+The replace() method does not change the string it is called on.
+
+The replace() method returns a new string.
+
+The replace() method replaces only the first match
+
+If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+By default, the replace() method replaces only the first match:
+
+Note:
+~~~~
+Regular expressions are written without quotes.
+
+
+To replace all matches, use a regular expression with a /g flag (global match):
+
+JavaScript String ReplaceAll():
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In 2021, JavaScript introduced the string method replaceAll():
+
+The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+
+If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+
+
+
+Converting a String to an Array:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you want to work with a string as an array, you can convert it to an array.
+
+JavaScript String split():
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+A string can be converted to an array with the split() method:
+
+
+

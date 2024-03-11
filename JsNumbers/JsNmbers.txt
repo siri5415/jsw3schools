@@ -1,0 +1,59 @@
+JavaScript Numbers:
+~~~~~~~~~~~~~~~~~~~
+JavaScript has only one type of number. Numbers can be written with or without decimals.
+
+Integer Precision:
+~~~~~~~~~~~~~~~~~~~
+Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+
+The maximum number of decimals is 17.
+
+Floating Precision:
+~~~~~~~~~~~~~~~~~~~
+Floating point arithmetic is not always 100% accurate:
+
+
+Adding Numbers and Strings:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WARNING !!
+
+JavaScript uses the + operator for both addition and concatenation.
+
+Numbers are added. Strings are concatenated.
+
+
+The JavaScript interpreter works from left to right.
+
+First 10 + 20 is added because x and y are both numbers.
+
+Then 30 + "30" is concatenated because z is a string.
+
+Numeric Strings:
+~~~~~~~~~~~~~~~~~
+JavaScript strings can have numeric content:
+
+In the last example JavaScript uses the + operator to concatenate the strings.
+
+NaN - Not a Number:
+~~~~~~~~~~~~~~~~~~
+NaN is a JavaScript reserved word indicating that a number is not a legal number.
+
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+Infinity:
+~~~~~~~~~
+Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+
+Hexadecimal:
+~~~~~~~~~~~~
+JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+
+By default, JavaScript displays numbers as base 10 decimals.
+
+But you can use the toString() method to output numbers from base 2 to base 36.
+
+Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+
+
+
+

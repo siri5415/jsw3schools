@@ -1,0 +1,20 @@
+//Numbers :
+let length = 16;
+let weight = 7.5;
+
+//Strings :
+let color = "Pink";
+let lastName ="Sirisha";
+
+//Boolean :
+let x = true;
+let y = false;
+
+//Object :
+const person = {firstName: "Siri",lastName:"Sirisha"};
+
+//Array object:
+const cars = ["Thar","Volvo","BMW"];
+
+//Date object:
+const Date = new Date("2024-01-31");

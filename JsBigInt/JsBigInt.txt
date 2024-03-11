@@ -1,0 +1,82 @@
+JavaScript BigInt:
+~~~~~~~~~~~~~~~~~~
+JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+
+JavaScript Integer Accuracy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+JavaScript integers are only accurate up to 15 digits:
+
+In JavaScript, all numbers are stored in a 64-bit floating-point format (IEEE 754 standard).
+
+With this standard, large integer cannot be exactly represented and will be rounded.
+
+Because of this, JavaScript can only safely represent integers:
+
+Up to 9007199254740991 +(253-1)
+
+and
+
+Down to -9007199254740991 -(253-1).
+
+Integer values outside this range lose precision.
+
+BigInt is the second numeric data type in JavaScript (after Number).
+
+With BigInt the total number of supported data types in JavaScript is 8:
+
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+
+BigInt Operators:
+~~~~~~~~~~~~~~~~~
+Operators that can be used on a JavaScript Number can also be used on a BigInt.
+
+
+Notes:
+~~~~~~
+Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
+
+Unsigned right shift (>>>) can not be done on a BigInt (it does not have a fixed width).
+
+
+BigInt Decimals:
+~~~~~~~~~~~~~~~~~~
+A BigInt can not have decimals.
+
+
+Minimum and Maximum Safe Integers:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ES6 added max and min properties to the Number object:
+
+MAX_SAFE_INTEGER
+MIN_SAFE_INTEGER
+
+
+New Number Methods:
+~~~~~~~~~~~~~~~~~~~
+ES6 also added 2 new methods to the Number object:
+
+Number.isInteger()
+Number.isSafeInteger()
+
+
+The Number.isInteger() Method:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Number.isInteger() method returns true if the argument is an integer.
+
+The Number.isSafeInteger() Method:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A safe integer is an integer that can be exactly represented as a double precision number.
+
+The Number.isSafeInteger() method returns true if the argument is a safe integer.
+
+Safe integers are all integers from -(253 - 1) to +(253 - 1).
+This is safe: 9007199254740991. This is not safe: 9007199254740992.
+
